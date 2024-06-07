@@ -8,5 +8,5 @@ services:
     healthCheckPath: /healthz
     envVars:
       - key: PORT
-        value: [80,443]
+        value: 80,443
    
