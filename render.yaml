@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: appsmith
+    autoDeploy: false
+    env: image
+    image:
+      url: index.docker.io/appsmith/appsmith-ee
+    healthCheckPath: /healthz
+    envVars:
+      - key: PORT
+        value: 80
+      - key: PORT
+        value: 443
+   
